@@ -39,14 +39,27 @@ p{
     transition: 0.1s;
 }
 
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
 .btn:hover{
     background-color: #3580db;
+}
+
+@keyframes animate-outline{
+    from{
+        outline: 0px solid #4f9cf9;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
 }
 
 header{
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; /*- EFEITO PARALLAX-*/
 }
 
 nav{
@@ -75,7 +88,7 @@ nav ul a:not(.btn):after{
     background-color: #4f9cf9;
     height: 3px;
     width: 0%;
-    display: block;\
+    display: block;
     margin: 0 auto;
     transition: 0.3s;
 }
@@ -105,4 +118,52 @@ nav ul a:hover::after{
     color: #ffffffb7;
     font-weight: lighter;
     margin: 18px 0;
+}
+
+.faca-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.faca-mais .faca-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.faca-mais .faca-mais-text h3{
+    font-size: 56px;
+}
+
+.faca-mais .faca-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
+.faca-mais .faca-mais-img{
+    width: 50%;
+}
+
+.faca-mais .faca-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-item{
+    background-color: #d3e6fd;
+    margin: 15px; /*espaçamento externo*/
+    border-radius: 14px; /*arredondar os cantos do card item*/
+    text-align: center; /*centralizar os textos*/
+    width:  350px; /*largura do card item*/
 }
