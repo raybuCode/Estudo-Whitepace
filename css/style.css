@@ -155,7 +155,7 @@ nav ul a:hover::after{
     text-align: center;
 }
 
-.cards {
+.cards{
     display: flex;
     justify-content: center;
 }
@@ -163,7 +163,48 @@ nav ul a:hover::after{
 .depoimentos .card-item{
     background-color: #d3e6fd;
     margin: 15px; /*espaçamento externo*/
-    border-radius: 14px; /*arredondar os cantos do card item*/
+    border-radius: 14px; /*arredondar os cantos da borda do card item*/
     text-align: center; /*centralizar os textos*/
     width:  350px; /*largura do card item*/
+    transition: 0.3s;
 }
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.depoimentos .card-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;
+}
+
+.depoimentos .card-item .estrelas i{
+    color: #4f9cf9;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+.depoimentos .card-item:hover{
+    background-color: #4f9cf9;
+    margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .estrelas i{
+    color: #d3e6fd;
+}
+
