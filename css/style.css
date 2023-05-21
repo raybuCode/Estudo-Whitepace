@@ -14,7 +14,7 @@ body{
 
 section,
 footer{
-    padding: 54px 0;
+    padding: 84px;
 }
 h3{
     font-size: 50px;
@@ -37,6 +37,7 @@ p{
     cursor: pointer;
     display: inline-block;
     transition: 0.1s;
+    /*margin-bottom: 16px;*/
 }
 
 .btn.animate-btn{
@@ -84,7 +85,6 @@ nav ul a{
 }
 
 nav ul a:not(.btn):after{
-    content: "";
     background-color: #4f9cf9;
     height: 3px;
     width: 0%;
@@ -110,6 +110,7 @@ nav .close-icon{
     font-size: 30px;
     color: white;
 }
+/*End menu icon*/
 
 .banner{
     display: flex;
@@ -256,8 +257,190 @@ nav .close-icon{
     margin-top: 10px;
     color: white;
 }
+/*Página Sobre*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-@media(max-width: 830px){
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+.sobre .sobre-text h3{
+    font-size: 56px;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.sobre .sobre-img{
+    width: 50%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*End Página Sobre*/
+
+/*Página serviços*/
+.servicos h3{
+    text-align: center;
+}
+
+.servicos .container > p{
+    text-align: center;
+    transform: 0.3s;
+}
+
+.servicos .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.servicos .row-card-item{
+    background-color: #d3e6fd;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item:hover{
+    background-color: #4f9cf9;
+}
+.servicos .row-card-item:hover p{
+    color: white;
+}
+.servicos .rows-cards img{
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    width: 70px;
+    padding: 9px;
+}
+.servicos .row-card-item p.nome-servico{
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.servicos .row-card-item p.descricao-servico{
+    transition: 0.3s;
+}
+/*End Página serviços*/
+
+/* dados */
+.dados{
+    background: #d3e6fd;
+}
+
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dados .dados-item{
+    text-align: center;
+    margin: 15px;
+    color: #000000be;
+}
+.dados .dados-item img{
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+
+.dados .dados-item p{
+    font-size: 18px;
+}
+
+.dados .dados-item p strong{
+    font-size: 28px;
+}
+/* End dados */
+
+/* Pagina de contato */
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .left-side{
+    width: 50%;
+    padding: 30px;
+    background-color: #4f9cf9;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+.contato-info .right-side{
+    width: 50%;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div i{
+    font-size: 24px;
+    margin-right: 20px;
+    color: white;
+}
+.contato-info .left-side p{
+    font-size: 17px;
+    color: white;
+}
+
+.contato-info .right-side{
+    width: 50%;
+}
+
+.contato-info .right-side input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47%;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato-info .right-side input:focus,
+.contato-info .right-side textarea:focus{
+    border-color: #4f9cf9;
+
+}
+.contato-info .right-side textarea{
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+.contato-info .right-side button{
+    border: none;
+}
+/* End pagina de contato*/
+
+@media(max-width: 830px){/*usar propriedade Clip-path para dar efeito no navbar*/
     .ul{
         position: fixed;
         top: 0;
@@ -290,4 +473,37 @@ nav .close-icon{
    }
 }
 
-/*propriedade Clip-path*/
+/* pagina home responsivo*/
+
+.faca-mais .faca-mais-text{
+    margin-top: 10px;
+    padding: 0 20px;
+    order: 1;
+}
+
+.faca-mais .container{
+    flex-direction: column;
+    
+}
+
+.faca-mais .faca-mais h3{
+    font-size: 48px;
+    
+}
+
+.faca-mais .faca-mais-img,
+.faca-mais .faca-mais-text{
+    width: 100%;
+}
+
+.banner .banner-text{
+    padding: 0px;
+    margin: 80px;
+}
+
+.banner .banner-text h1{
+    font-size: 4.5vw;
+}
+.banner .banner-text p{
+    font-size: 15px;
+}

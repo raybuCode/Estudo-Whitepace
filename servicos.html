@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome, importei para usar os icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Serviços</title>
+</head>
+<body>
+    <!--Header-->
+    <header style="background-image: url('img/background-servicos.jpg');">
+        <!--Div = divisão no html, server para agrupar um conjunto de itens-->
+        <!--container-->
+        <div class="container"> 
+            <!--Nav é usada para criação de menu navbar-->
+            <!--Navbar-->
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i></div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i></div>
+            </nav>
+            <!--End Navbar-->
+            <!--Section tag semantica do HTML5-->
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Serviços</h1>
+                </div>
+            </section>
+        </div>
+        <!--End container-->
+    </header>
+    <!--End Header-->
+    <!--Serviços-->
+    <section class="servicos">
+        <div class="container">
+            <h3>Nossos serviços</h3>
+            <p>Conheça nossos melhores serviços que temos para si!</p>
+            <!--Row card-->
+            <div class="rows-cards">                
+                <!--Row card 1-->
+                <div class="row-card-item">
+                    <img src="img/cloud.png" alt="">
+
+                    <p class="nome-servico"><strong>Serviço em Nuvem</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 1-->
+                <!--Row card 2-->
+                <div class="row-card-item">
+                    <img src="img/digital-marketing.png" alt="">
+
+                    <p class="nome-servico"><strong>Marketing Digital</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 2-->
+                <!--Row card 3-->
+                <div class="row-card-item">
+                    <img src="img/seo.png" alt="">
+
+                    <p class="nome-servico"><strong>SEO</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 3-->
+                <!--Row card 4-->
+                <div class="row-card-item">
+                    <img src="img/virtual_store.png" alt="">
+
+                    <p class="nome-servico"><strong>Criação de Lojas Virtuais</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 4-->
+                <!--Row card 5-->
+                <div class="row-card-item">
+                    <img src="img/layer.png" alt="">
+
+                    <p class="nome-servico"><strong>Identidade Visual & Design</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 5-->
+                <!--Row card 6-->
+                <div class="row-card-item">
+                    <img src="img/manager.png" alt="">
+
+                    <p class="nome-servico"><strong>Criação de Conteudo</strong></p>
+                    <p class="descricao-servico">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas corporis fuga, 
+                provident, aut possimus quasi, harum repellendus dolorum cupiditate consectetur
+                dignissimos illo ipsa veniam voluptatem delectus a accusamus totam?
+                    </p>
+                </div>
+                <!--End Row card 6-->
+            </div>
+            <!--End Row card-->
+        </div>
+
+    </section>
+    <!--End Section Serviços-->
+    <!-- Dados-->
+    <section class="dados">
+        <div class="container">
+            <!--dados item 1-->
+            <div class="dados-item">
+                <img src="img/cloud.png" alt="">
+                <p>
+                    <strong>+360</strong><br>
+                    Projetos Concluidos
+                </p>
+            </div>
+            <!--End dados item 1-->
+            <!--dados item 2-->
+            <div class="dados-item">
+                <img src="img/manager.png" alt="">
+                <p>
+                    <strong>+890</strong><br>
+                    Clientes satisfeitos
+                </p>
+            </div>
+            <!--End dados item 2-->
+            <!--dados item 3-->
+            <div class="dados-item">
+                <img src="img/trophy.png" alt="">
+                <p>
+                    <strong>+4303</strong><br>
+                    Jornada de trabalho
+                </p>
+            </div>
+            <!--End dados item 3-->
+            <!--dados item 4-->
+            <div class="dados-item">
+                <img src="img/layer.png" alt="">
+                <p>
+                    <strong>+254</strong><br>
+                    Publicidade paga
+                </p>
+            </div>
+            <!--End dados item 4-->
+        </div>
+    </section>
+    <!--End Dados-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="teste"></div>
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+            </div>
+            <p>Desenvolvido por DevNebula</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!-- ESTUDAR COM BASE DESSE VIDEO -->
+    <!--https://www.youtube.com/watch?v=LqqxZOec6HE&t=1246s-->
+    <script src="js/main.js"></script>
+</body>
+</html>
