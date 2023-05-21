@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Font awesome-->
+    <!--Font awesome, importei para usar os icones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Link CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <title>Witepace</title>
+    <title>Whitepace</title>
 </head>
 <body>
     <!--Header-->
@@ -17,6 +17,7 @@
         <!--container-->
         <div class="container"> 
             <!--Nav é usada para criação de menu navbar-->
+            <!--Navbar-->
             <nav>
                 <a href="index.html">
                     <img src="img/logo.png" alt="Logo">
@@ -26,9 +27,13 @@
                     <a href="sobre.html">Sobre</a>
                     <a href="servicos.html">Serviços</a>
                     <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i></div>
                 </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i></div>
             </nav>
-
+            <!--End Navbar-->
             <!--Section tag semantica do HTML5-->
             <section class="banner">
                 <div class="banner-text">
@@ -83,7 +88,7 @@
         <section class="depoimentos">
             <div class="container">
                 <h3>Nossos Depoimentos</h3>
-                <p>Leia o que nossos clientes falam de nó para o mundo</p>
+                <p>Leia o que nossos clientes falam de nós para o mundo</p>
             </div>
             <div class="cards">
 
@@ -138,9 +143,52 @@
             </div>
         </section>
     <!--end depoimentos-->
-
-
+    <!--Clientes-->
+        <section class="clientes">
+            <div class="container">
+                <h3>Nossos Clientes</h3>
+                <p>Prestamos serviços para todo tipo de empresa ou projeto, olhe alguns dos nossos clientes</p>
+                <div>
+                    <img src="img/apple.png" alt="">
+                    <img src="img/microsoft.png" alt="">
+                    <img src="img/slack.png" alt="">
+                    <img src="img/google.png" alt="">
+                </div>
+            </div>
+        </section>
+    <!--Fim Clientes-->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Tenha um website Seguro</h3>
+                <p>Nós trabalhamos com tecnologias atualizadas, rápidas e as mais seguras desse mercado, nós fazemos backup
+                    e manutenção no seu site em tempo recorde
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="img/security.png" alt="">
+            </div>
+        </div>
+        <!--End container-->
+    </section>
+    <!--End Faca mais-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+            </div>
+            <p>Desenvolvido por DevNebula</p>
+        </div>
+    </footer>
+    <!--End Footer-->
     <!-- ESTUDAR COM BASE DESSE VIDEO -->
     <!--https://www.youtube.com/watch?v=LqqxZOec6HE&t=1246s-->
+    <script src="js/main.js"></script>
 </body>
 </html>

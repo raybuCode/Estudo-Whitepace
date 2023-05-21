@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome, importei para usar os icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sobre | Website html css e javascript</title>
+</head>
+<body>
+    <!--Header-->
+    <header style="background-image: url('img/background-sobre1.jpg');">
+        <!--Div = divisão no html, server para agrupar um conjunto de itens-->
+        <!--container-->
+        <div class="container"> 
+            <!--Nav é usada para criação de menu navbar-->
+            <!--Navbar-->
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i></div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i></div>
+            </nav>
+            <!--End Navbar-->
+            <!--Section tag semantica do HTML5-->
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Sobre</h1>
+                </div>
+            </section>
+        </div>
+        <!--End container-->
+    </header>
+    <!--End Header-->
+    <!-- Faca mais-->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Faça mais com a Whitepace</h3>
+                <p>Criação de Websites, loja virtual, blogs para pequenas, médias e grandes empresas ter um site online
+                    nunca foi tão fácil
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="img/img-1.png" alt="">
+            </div>
+        </div>
+        <!--End container-->
+    </section>
+    <!--End Faca mais-->
+
+      <!-- Faca mais 2-->
+      <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-img">
+                <img src="img/img-2.png" alt="">
+            </div>
+
+            <div class="faca-mais-text">
+                <h3>Ter um website nunca foi tão fácil</h3>
+                <p>Agora com a nossa empresa ter um website é algo simplesmente fácil 
+                    basta entrar em contato e nós vamos desenvolver o seu website em tempo recorde para
+                    você começar a conquistar o mundo
+                </p>
+                <a href="contato.html" class="btn">Entrar em contato</a>
+            </div>
+        </div>
+        <!--End container-->
+    </section>
+    <!--End Faca mais 2-->
+
+    <!--depoimentos-->
+        <section class="depoimentos">
+            <div class="container">
+                <h3>Nossos Depoimentos</h3>
+                <p>Leia o que nossos clientes falam de nós para o mundo</p>
+            </div>
+            <div class="cards">
+
+                <!--Div card item 1-->
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="Rayanne">
+                    <p class="nome-user">Henry Jones</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis, consectetur nulla dignissimos molestiae,
+                        iusto recusandae veniam obcaecati ipsum quibusdam fugit porro exercitationem velit aut, ratione soluta. Sit, dicta veniam!</p>
+                <div class="estrelas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                </div>
+                <!--End card item 1-->
+
+                <!--Div card item 2-->
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="Rayanne">
+                    <p class="nome-user">Henry Jones</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis, consectetur nulla dignissimos molestiae,
+                        iusto recusandae veniam obcaecati ipsum quibusdam fugit porro exercitationem velit aut, ratione soluta. Sit, dicta veniam!</p>
+                <div class="estrelas">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                
+                </div>
+                <!--End card item 2-->
+
+                <!--Div card item 2-->
+                <div class="card-item">
+                    <img src="img/me.jpg" alt="Rayanne">
+                    <p class="nome-user">Henry Jones</p>
+                    <p class="depoimento-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis, consectetur nulla dignissimos molestiae,
+                        iusto recusandae veniam obcaecati ipsum quibusdam fugit porro exercitationem velit aut, ratione soluta. Sit, dicta veniam!</p>
+                <div class="estrelas">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                </div>
+                <!--End card item 3-->
+            </div>
+        </section>
+    <!--end depoimentos-->
+    <!--Clientes-->
+        <section class="clientes">
+            <div class="container">
+                <h3>Nossos Clientes</h3>
+                <p>Prestamos serviços para todo tipo de empresa ou projeto, olhe alguns dos nossos clientes</p>
+                <div>
+                    <img src="img/apple.png" alt="">
+                    <img src="img/microsoft.png" alt="">
+                    <img src="img/slack.png" alt="">
+                    <img src="img/google.png" alt="">
+                </div>
+            </div>
+        </section>
+    <!--Fim Clientes-->
+    <section class="faca-mais">
+        <div class="container">
+            <div class="faca-mais-text">
+                <h3>Tenha um website Seguro</h3>
+                <p>Nós trabalhamos com tecnologias atualizadas, rápidas e as mais seguras desse mercado, nós fazemos backup
+                    e manutenção no seu site em tempo recorde
+                </p>
+                <a href="contato.html" class="btn animate-btn">Entrar em contato</a>
+            </div>
+            <div class="faca-mais-img">
+                <img src="img/security.png" alt="">
+            </div>
+        </div>
+        <!--End container-->
+    </section>
+    <!--End Faca mais-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-github"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+            </div>
+            <p>Desenvolvido por DevNebula</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!-- ESTUDAR COM BASE DESSE VIDEO -->
+    <!--https://www.youtube.com/watch?v=LqqxZOec6HE&t=1246s-->
+    <script src="js/main.js"></script>
+</body>
+</html>
